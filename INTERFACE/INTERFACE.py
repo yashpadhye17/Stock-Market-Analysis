@@ -14,4 +14,18 @@ phoneValue=StringVar()
 genderValue=StringVar ()
 emailValue=StringVar()
 
+nameEntry=Entry(root,textvariable=nameValue, width=30, bd=2,font=20)
+phoneEntry=Entry(root, textvariable=phoneValue, width=30, bd=2, font=20)
+genderEntry=Entry(root,textvariable=genderValue, width=30, bd=2, font=20)
+emailEntry=Entry(root, textvariable=emailValue, width=30, bd=2,font=20)
+nameEntry.place(x=200, y=150)
+phoneEntry.place(x=200,y=200)
+genderEntry.place(x=200,y=250)
+emailEntry.place(x=200,y=300)
+
+#check button
+checkValue=IntVar
+checkbtn=Checkbutton(text="remember me?", variable=checkValue)
+checkbtn.place(x=200,y=340)
+
 root.mainloop()
