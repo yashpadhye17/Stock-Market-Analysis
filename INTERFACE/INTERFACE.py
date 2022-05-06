@@ -3,6 +3,20 @@ root=Tk()
 root.title("Registration")
 root.geometry("600x470")
 root.resizable(False, False)
+
+def register():
+    print("registered")
+   name_info=nameValue.get()
+   phone_info=phoneValue.get()
+   gender_info=genderValue.get()
+   email_info=emailvalue.get()
+file=open(name_info+".txt","w")
+file.write(name_info+"\n")
+file.write(phone_info+"\n")
+file.write(gender_info+"\n")
+file.write(email_info+"\n")
+file.close() 
+    Label(text"Registration sucess",fg="green",font=("calibri",11)).place(x=250,y=430)
 Label(root,text="Python Registration Form",font="arial 25").pack(pady=50)
 Label (text="Name", font=23).place(x=100, y=150)
 Label(text="Phone", font=23).place(x=100, y=200)
@@ -27,5 +41,7 @@ emailEntry.place(x=200,y=300)
 checkValue=IntVar
 checkbtn=Checkbutton(text="remember me?", variable=checkValue)
 checkbtn.place(x=200,y=340)
+Button(text="Register",font=20,width=11, height=2,command=register).place(x=250,y=38e)
+
 
 root.mainloop()
