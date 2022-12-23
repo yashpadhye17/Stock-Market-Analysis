@@ -1,4 +1,4 @@
-I
+
 # Stock Market Analysis using Machine Learning
 
 We create a linear regression model to forecast a stock's closing price
